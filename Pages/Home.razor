@@ -24,5 +24,11 @@ The reasons of my life and to keep fighting
         </div>
     </div>
 </div>
-
-
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        int test = 2;
+        System.Diagnostics.Debug.WriteLine("Este es un mensaje en Output");
+    }
+}
